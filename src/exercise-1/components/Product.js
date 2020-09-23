@@ -13,10 +13,13 @@ class Product extends Component {
     };
   }
 
+
   render() {
+
     return (
       <div>
         <h2>Product Details</h2>
+        {this.state.product.length > 0 &&
         <ul>
           <li>Name: {this.state.product[0].name}</li>
           <li>Id: {this.state.product[0].id}</li>
@@ -25,6 +28,7 @@ class Product extends Component {
           <li>Desc: {this.state.product[0].desc}</li>
           <li>Website: {"/product/" + this.state.product[0].id}</li>
         </ul>
+        }
       </div>
     )
   }

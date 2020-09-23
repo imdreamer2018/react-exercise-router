@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import productsData from '../../exercise-2/mockups/data.json'
-import Product from "./Product";
-import {Link, Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 class Products extends Component {
   constructor(props) {
@@ -17,13 +16,13 @@ class Products extends Component {
       <div>
         <h1>All products</h1>
         <li>
-        <Link to="/products/1">{this.state.products.bicycle.name}</Link>
+        <Link to={"/products/"+this.state.products.bicycle.id}>{this.state.products.bicycle.name}</Link>
         </li>
         <li>
-        <Link to="/products/2">{this.state.products.TV.name}</Link>
+        <Link to={"/products/"+this.state.products.TV.id}>{this.state.products.TV.name}</Link>
         </li>
         <li>
-        <Link to="/products/3">{this.state.products.pencil.name}</Link>
+        <Link to={"/products/"+this.state.products.pencil.id}>{this.state.products.pencil.name}</Link>
         </li>
       </div>
     )
