@@ -12,7 +12,10 @@ class Header extends Component {
       <div className="header">
         <ul className="nav nav-tabs">
           <li className="nav-item">
-            <Link className="nav-link active" to="/">Home</Link>
+            <Link className="nav-link" to="/">Home</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/products">Products</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/my-profiles">My Profiles</Link>
